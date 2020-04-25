@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>	
+				</div>
+				<nav class="header-inner__menu">
+					<ul class="header-inner__menu-list">
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header-inner-btnGruop">
+					<a class="header-inner__signIn-btn" href="#">Вход</a>
+					<a class="header-inner__signUp-btn" href="#">Регистрация</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="top">
+		<div class="container container-top">
+			<div class="top__title">
+				Мультивалютный обменный сервис 24/7<br>
+				<span>Быстрый обмен без скрытых комиссий</span>
+			</div>
+			<div class="top-box">
+				<div class="top-box-inner">
+					<div class="top-box__col">
+						<div class="top-box__col__title">
+							Вы отдаете
+						</div>
+						<label for="take-money">
+							Сумма
+						</label>
+						<div class="top-box__exchange">
+							<input type="number" id="take-money" value="1000">
+							<select name="" id="from-val">
+								<option value="UAH">UAH</option>
+								<option value="RUB">RUB</option>
+								<option value="USD">USD</option>
+								<option value="EUR">EUR</option>
+							</select>
+						</div>
+					</div>
+
+					<a href="" class="top-box__arrows">
+						<img src="img/arrows.png" alt="">
+					</a>
+					<div class="top-box__col">
+						<div class="top-box__col__title">
+							Вы получете
+							<span>c учетом комиссии ПС (0.5%)</span>
+						</div>
+						<label for="take-money">
+							Сумма
+						</label>
+						<div class="top-box__exchange">
+							<input type="number" id="get-money" readonly>
+							<select name="" id="to-val">
+								<option value="UAH">UAH</option>
+								<option value="RUB">RUB</option>
+								<option value="USD">USD</option>
+								<option value="EUR">EUR</option>
+							</select>
+						</div>
+					</div>
+					<a href="#" id="top-box__btn">Обменять</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="desription">
+		<div class="container">
+			<div class="desription-inner">
+				<div class="desription-options">
+					<div class="desription-options__col">
+						<div class="desription-options__col-img">
+							<img src="img/serv1.png" alt="">
+						</div>
+						<div class="desription-options__col-title">
+							Безопасность
+						</div>
+						<div class="desription-options__col-text">
+							Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!
+						</div>
+					</div>
+					<div class="desription-options__col">
+						<div class="desription-options__col-img">
+							<img src="img/serv2.png" alt="">
+						</div>
+						<div class="desription-options__col-title">
+							Реферальная система
+						</div>
+						<div class="desription-options__col-text">
+							На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.
+						</div>
+					</div>
+					<div class="desription-options__col">
+						<div class="desription-options__col-img">
+							<img src="img/serv3.png" alt="">
+						</div>
+						<div class="desription-options__col-title">
+							Онлайн поддержка
+						</div>
+						<div class="desription-options__col-text">
+							Четыре вида поддержки для наших клиентов:  Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).
+						</div>
+					</div>
+				</div>
+				<div class="desription-service">
+					<div class="desription-service-textCol">
+						<div class="desription-service__title">
+							Сервис обмена электронных валют с 5-летней историей
+						</div>
+						<div class="desription-service__text">
+							За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.
+						</div>
+					</div>
+					<div class="desription-service__img">
+						<img src="img/serv4.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="valut-reserves">
+		<div class="container">
+			<div class="valut-reserves__title">Резерв валюты</div>
+			<div class="valut-reserves__course">
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/yandex_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">Yandex RUB</div>
+						<div class="valut-reserves__course-item__num">900549</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/ethereum_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">Ethereum ETH</div>
+						<div class="valut-reserves__course-item__num">123</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/bitcoin_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">Bitcoin BTC</div>
+						<div class="valut-reserves__course-item__num">0.63333439</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/sberbank_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">Сбербанк  RUB</div>
+						<div class="valut-reserves__course-item__num">142666</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/privatbank_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">Приват 24 UAH</div>
+						<div class="valut-reserves__course-item__num">142666</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/paypal_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">PayPal USD</div>
+						<div class="valut-reserves__course-item__num">5139.58</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/pm_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">PM USD</div>
+						<div class="valut-reserves__course-item__num">3192.22</div>
+					</div>
+				</div>
+				<div class="valut-reserves__course-item">
+					<div class="valut-reserves__course-item-img">
+						<img src="img/qiwi_icon.png" alt="">
+					</div>
+					<div class="valut-reserves__course-item-info">
+						<div class="valut-reserves__course-item__txt">Qiwi RUB</div>
+						<div class="valut-reserves__course-item__num">99243.321</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<div class="about__title">
+				Что клиенты говорят о нас
+			</div>
+			<div class="about__reviews">
+				<div class="about__reviews-item">
+					<div class="about__reviews-item-inner">
+						<div class="about__reviews-item__txt">
+							Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.
+						</div>
+						<div class="about__reviews-item__info">
+							<div class="about__reviews-item__info-author">
+								Jacob Robertson
+							</div>
+							<div class="about__reviews-item__info-date">
+								20.02.2020, 12:10
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__reviews-item">
+					<div class="about__reviews-item-inner">
+						<div class="about__reviews-item__txt">
+							3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!
+						</div>
+						<div class="about__reviews-item__info">
+							<div class="about__reviews-item__info-author">
+								Morris Robertson
+							</div>
+							<div class="about__reviews-item__info-date">
+								17.02.2020, 18:51
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__reviews-item">
+					<div class="about__reviews-item-inner">
+						<div class="about__reviews-item__txt">
+							Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.
+						</div>
+						<div class="about__reviews-item__info">
+							<div class="about__reviews-item__info-author">
+								Jacob Robertson
+							</div>
+							<div class="about__reviews-item__info-date">
+								20.02.2020, 12:10
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__reviews-item">
+					<div class="about__reviews-item-inner">
+						<div class="about__reviews-item__txt">
+							3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!
+						</div>
+						<div class="about__reviews-item__info">
+							<div class="about__reviews-item__info-author">
+								Morris Robertson
+							</div>
+							<div class="about__reviews-item__info-date">
+								17.02.2020, 18:51
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="start-exchange">
+		<div class="container">
+			<div class="start-exchange-inner">
+				<div class="start-exchange-inner__img">
+					<img src="img/start-exchange-img1.png" alt="">
+				</div>
+				<div class="start-exchange-inner__col">
+					<div class="start-exchange-inner__col__text">
+						Будем рады предоставить Вам качественный обмен валют на нашем сервисе!<br>
+						<span>Начните обмен прямо сейчас</span>
+					</div>
+					<a href="#" class="start-exchange-inner__col__btn">Начать обмен</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<div class="footer-inner__logo">
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>	
+					</div>
+					<div class="footer-inner__logo-text">
+						Сервис обмена электронных валют
+					</div>
+				</div>
+				<nav class="footer-inner__menu">
+					<ul>
+						<li>
+							<a href="#">Карта сайта</a>
+						</li>
+						<li>
+							<a href="#">Предупреждение</a>
+						</li>
+						<li>
+							<a href="#">Правила сайта</a>
+						</li>
+						<li>
+							<a href="#">Обмен</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer-inner__networks">
+					<a href="#" class="footer-inner__networks-item">
+						<img src="img/vk.png" alt="">
+					</a>
+					<a href="#" class="footer-inner__networks-item">
+						<img src="img/facebook.png" alt="">
+					</a>
+					<a href="#" class="footer-inner__networks-item">
+						<img src="img/instagram.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
