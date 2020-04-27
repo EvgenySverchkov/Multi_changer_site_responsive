@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body>
 	<header class="header">
@@ -25,12 +26,39 @@
 					</ul>
 				</nav>
 				<div class="header-inner-btnGruop">
-					<a class="header-inner__signIn-btn" href="#">Вход</a>
-					<a class="header-inner__signUp-btn" href="#">Регистрация</a>
+					<a class="header-inner__signIn-btn" href="#login-form" data-effect="mfp-zoom-in">Вход</a>
+					<a class="header-inner__signUp-btn" href="#registration-form" data-effect="mfp-zoom-in">Регистрация</a>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	<div class="form__wrapper">
+		<form id="login-form" class="form mfp-with-anim mfp-hide">
+			<label for="login-form__login">Введите ваш логин</label>
+			<input type="text" name="login" id="login-form__login" required>
+			<label for="login-form__password">Введите ваш пароль</label>
+			<input type="password" name="password" id="login-form__password" required pattern="[a-zA-Z0-9]{6,}">
+			<button form ="login-form" type="submit" class="top-box__btn form__btn">Вход</button>
+		</form>
+	</div>
+
+	<div class="form__wrapper">
+		<form id="registration-form" class="form mfp-with-anim mfp-hide">
+			<label for="registration-form__login">Введите никнэйм</label>
+			<input type="text" name="login" id="registration-form__login" required>
+
+			<label for="registration-form__login">Введите ваш email</label>
+			<input type="email" name="mail" id="registration-form__login" required>
+
+			<label for="registration-form__password">Введите ваш новый пароль</label>
+			<input type="password" name="password" id="registration-form__password" pattern="[a-zA-Z0-9]{6,}" required>
+
+			<label for="registration-form__password">Повторите ваш новый пароль</label>
+			<input type="password" name="repeat-password" id="registration-form__repeat-password" pattern="[a-zA-Z0-9]{6,}" required>
+			<button form ="registration-form" type="submit" class="top-box__btn form__btn">Регистрация</button>
+		</form>
+	</div>
 
 	<section class="top">
 		<div class="container container-top">
@@ -79,7 +107,7 @@
 							</select>
 						</div>
 					</div>
-					<a href="#" id="top-box__btn">Обменять</a>
+					<a href="#" class="top-box__btn">Обменять</a>
 				</div>
 			</div>
 		</div>
@@ -353,6 +381,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -50,6 +50,72 @@ body{
 	margin-left: 17px;
 }
 
+.form__wrapper{
+	display: none;
+}
+.form{
+	border: 4px solid rgba(86, 46, 194, 0.4);
+	border-radius: 26px;
+	max-width: 380px;
+	position: relative;
+	margin: 0 auto;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 44px;
+}
+.form input{
+	font-size: 20px;
+	background: transparent;
+	border:none;
+	border-bottom: solid 2.5px rgb(214, 220, 226, .25);
+	outline: none;
+	padding: 20px 10px;
+	margin-bottom: 30px;
+}
+.form__btn{
+	border: none;
+}
+.mfp-zoom-in .mfp-with-anim {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8); 
+}
+
+.mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out; 
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1); 
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8; 
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0; 
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0; 
+}
+
 .top{
 	background-image: url(../img/top-bg.jpg);
 	background-repeat: no-repeat;
@@ -95,7 +161,7 @@ body{
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	
+
 }
 .top-box::after{
 	min-height: 20px;
@@ -179,7 +245,7 @@ input[type=number]::-webkit-outer-spin-button {
 	bottom: 8.5%;
 }
 
-#top-box__btn{
+.top-box__btn{
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
@@ -190,7 +256,7 @@ input[type=number]::-webkit-outer-spin-button {
 	border-radius: 9px;
 	box-shadow: 0 5px 15px #562EC2;
 }
-#top-box__btn:active{
+.top-box__btn:active{
 	box-shadow: none;
 }
 
@@ -505,7 +571,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 @media (max-width:973px){
-	#top-box__btn{
+	.top-box__btn{
 		margin: 15px auto 0;
 	}
 	.desription-service__title{

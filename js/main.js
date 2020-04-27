@@ -1,4 +1,15 @@
 $(function(){
+	$(".header-inner__signIn-btn, .header-inner__signUp-btn").magnificPopup({
+		type: 'inline',
+		removalDelay: 500,
+		callbacks: {
+			beforeOpen: function () {
+				this.st.mainClass = this.st.el.attr('data-effect');
+			}
+		},
+		midClick: true
+	});
+
 	$('.about__reviews').slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
@@ -18,6 +29,7 @@ $(function(){
 		},
 		]
 	});
+
 	appendImg();
 	$(window).resize(appendImg);
 
@@ -106,7 +118,19 @@ $(function(){
 	$("#take-money").on('input', exchanger);
 	$("#from-val").on('change', exchanger);
 	$("#to-val").on('change', exchanger);
-});
 
+	comparePasswords();
+	function comparePasswords(){
+		$("#registration-form").submit(function(e){
+			let passArr = [];
+			$(this).find("input[name$='password']").each(function(){
+				passArr.push($(this).val());
+			});
+			if(passArr[0]!==passArr[1]){
+				e.preventDefault();
+			}
+		});
+	}
+});
 
 
